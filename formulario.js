@@ -1,4 +1,4 @@
-var formulario = document.querySelector(".form")//punto por que referencia una class
+var formulario = document.querySelector(".formulario")//punto por que referencia una class
 
 formulario.onsubmit = function(e) {
 
@@ -74,7 +74,7 @@ var espacio = document.createElement("br")
 spanNombre.textContent = descripcion + ": "
 inputNombre.value = valor 
 elementoLista.appendChild(spanNombre)
-elementoLista.appendChild(inputNombre)
+elementoLista.appendChild(inputNombre)dd
 elementoLista.appendChild(espacio)
 }
 
