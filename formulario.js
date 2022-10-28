@@ -1,20 +1,20 @@
-var formulario = document.querySelector("#form")
+var formulario = document.querySelector(".form")//punto por que referencia una class
 
 formulario.onsubmit = function(e) {
 
   e.prevent();
   
-  var n = formulario.elements[0]
-  var e = formulario.elements[1]
-  var na = formulario.elements[2]
+  var n = formulario.elements[0];
+  var e = formulario.elements[1];// agregar ; al final en los tres
+  var na = formulario.elements[2];
 
-  var nombre = n.value
-  var edad = e.value
+  var nombre = n.value;
+  var edad = e.value;//  agregar ; al final en los dos
 
-  var i = na.selectedIndex
-  var nacionalidad = na.options[i].value
-  console.log(nombre, edad)
-  console.log(nacionalidad)
+  var i = na.selectedIndex;
+  var nacionalidad = na.options[i].value;// estos 4 agregar ;
+  console.log(nombre, edad);
+  console.log(nacionalidad);
 
   if (nombre.length === 0) {
     n.classList.add("error")
@@ -30,9 +30,9 @@ if (nombre.length > 0
   }
 }
 
-var botonBorrar = document.createElement("button")
-botonBorrar.textContent = "Eliminar invitado"
-botonBorrar.id = "boton-borrar"
+var botonBorrar = document.createElement("button");
+var botonBorrar.textContent = "Eliminar invitado";
+var botonBorrar.id = "boton-borrar";
 var corteLinea = document.createElement("br")
 document.body.appendChild(corteLinea)
 document.body.appendChild(botonBorrar);
